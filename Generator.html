@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkinSecrets | Routine Generator</title>
+<meta name="description" content="Build a simple skincare routine based on your skin type and concerns">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<a href="index.html" class="brand">
+<img src="images/logo.png" alt="SkinSecrets skincare logo" class="logo">
+<span class="brand-name">SkinSecrets</span>
+</a>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="generator.html">Routine Generator</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="generator-page">
+<div class="container">
+<h2>Build Your Routine</h2>
+<p>Choose your skin type and concern to generate a SkinSecrets routine</p>
+<img src="images/skin3.jpg" alt="Skincare product textures" class="generator-image">
+
+<div class="generator-box">
+<label for="skin-type">Skin Type</label>
+<select id="skin-type" name="skin-type" required>
+<option value="" disabled selected>Select your skin type</option>
+<option value="dry">Dry</option>
+<option value="oily">Oily</option>
+<option value="combination">Combination</option>
+<option value="sensitive">Sensitive</option>
+</select>
+
+
+<label for="skin-concern">Skin Concern</label>
+<select id="skin-concern">
+<option value="">Select your skin concern</option>
+<option value="acne">Acne</option>
+<option value="dullness">Dullness</option>
+<option value="redness">Redness</option>
+<option value="dark-spots">Dark Spots</option>
+</select>
+
+<button id="generate-button" class="button">Generate Routine</button>
+</div>
+
+<div class="result-box" id="result-box">
+<h3>Your Routine</h3>
+<p id="routine-result">Your recommended routine will appear here</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2026 SkinSecrets</p>
+<p>Email: hello@skinsecrets.com</p>
+</div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
